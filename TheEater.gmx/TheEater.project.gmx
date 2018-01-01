@@ -18,15 +18,23 @@
     <sprite>sprites\spr_game_over</sprite>
     <sprite>sprites\spr_flowers</sprite>
     <sprite>sprites\spr_random</sprite>
+    <sprites name="Menu">
+      <sprite>sprites\spr_arrow</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_color</background>
     <background>background\bk_piso</background>
     <background>background\bk_grass</background>
+    <background>background\bk_menu</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_menu.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_game</font>
+    <font>fonts\fnt_options</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_gus</object>
@@ -36,9 +44,11 @@
     <object>objects\obj_cactus</object>
     <object>objects\obj_cloud</object>
     <object>objects\obj_gameover</object>
+    <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
