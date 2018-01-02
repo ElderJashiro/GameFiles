@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -171,7 +171,7 @@ instance_create(room_width + 32, yy, obj_cloud);
 }
 
 if obj_gus.state == "lose" {
-    if sco &gt; hi
+        if sco &gt; hi
         hi = sco;
 }
          

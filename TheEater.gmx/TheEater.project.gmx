@@ -21,6 +21,7 @@
     <sprites name="Menu">
       <sprite>sprites\spr_arrow</sprite>
     </sprites>
+    <sprite>sprites\spr_heart</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_color</background>
@@ -45,6 +46,7 @@
     <object>objects\obj_cloud</object>
     <object>objects\obj_gameover</object>
     <object>objects\obj_menu</object>
+    <object>objects\obj_stats</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
