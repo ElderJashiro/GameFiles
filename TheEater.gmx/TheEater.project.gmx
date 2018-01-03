@@ -8,8 +8,12 @@
     <sound>sound\snd_jump</sound>
     <sound>sound\snd_lose</sound>
     <sound>sound\snd_point</sound>
+    <sound>sound\snd_bite</sound>
+    <sound>sound\snd_hurt</sound>
+    <sound>sound\snd_prro</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\gus_jump</sprite>
     <sprite>sprites\gus_run</sprite>
     <sprite>sprites\gus_idle</sprite>
     <sprite>sprites\spr_lose</sprite>
@@ -20,6 +24,10 @@
     <sprite>sprites\spr_random</sprite>
     <sprites name="Menu">
       <sprite>sprites\spr_arrow</sprite>
+    </sprites>
+    <sprite>sprites\spr_heart</sprite>
+    <sprites name="enemies">
+      <sprite>sprites\spr_enemy</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -45,6 +53,10 @@
     <object>objects\obj_cloud</object>
     <object>objects\obj_gameover</object>
     <object>objects\obj_menu</object>
+    <object>objects\obj_stats</object>
+    <objects name="obj_enemies">
+      <object>objects\obj_enemy</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
