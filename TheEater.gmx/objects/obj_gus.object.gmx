@@ -145,15 +145,23 @@ if state == "fall" &amp;&amp; y == ystart {
 // Lose
 
 
-if (obj_stats.hp = 0) &amp;&amp; place_meeting(x, y, obj_cactus) {
+if (obj_stats.hp = .2) &amp;&amp; place_meeting(x, y, obj_cactus) {
     state = "lose"
         vsped = 0;    
     global.start = false;
    
      if !(instance_exists(obj_gameover))
         instance_create(room_width/2, room_height/2, obj_gameover);
-        
+             
 }
+
+// eating enemy
+
+if place_meeting(x, y, obj_enemy) audio_play_sound(snd_bite, 10, false);
+
+// meeting cactus
+
+
 
 
 </string>
@@ -178,27 +186,30 @@ if (obj_stats.hp = 0) &amp;&amp; place_meeting(x, y, obj_cactus) {
             <kind>1</kind>
             <string>/// Sprites
 
-if global.start == false {
+if global.start == false &amp;&amp; state = "idle" {
     sprite_index = gus_idle;
 
 }
 
-if global.start == true {
     if state == "run" {
         image_speed = .2;
         sprite_index = gus_run;
         
     }
     else if state == "jump" {
-        image_speed = 0;
-        sprite_index = gus_idle;
+        image_speed = .2;
+        sprite_index = gus_jump;
     }
+    else if global.start == false &amp;&amp; state = "lose" {
+        image_speed = .2;
+        sprite_index = spr_lose;     
 }
 
-if state == "lose" {
-    image_speed = 0;
-    sprite_index = spr_lose;
-}
+//    if state == "lose" {
+//    image_speed = .2;
+//    sprite_index = spr_lose;
+//}
+
 </string>
           </argument>
         </arguments>

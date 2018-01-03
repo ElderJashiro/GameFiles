@@ -27,8 +27,6 @@
             <kind>1</kind>
             <string>image_speed = 0;
 
-image_index = choose(0, 1, 2);
-
 hspeed = -15;
 </string>
           </argument>
@@ -57,6 +55,7 @@ hspeed = -15;
     
 if x &lt; (-32)
     instance_destroy();
+    
     
 </string>
           </argument>
